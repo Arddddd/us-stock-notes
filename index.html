@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美股研究专题</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; background: #f4f6f8; color: #26303c; line-height: 1.8; }
+a { color: #2456a6; text-decoration: none; }
+header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e9ef; }
+.header-inner { max-width: 960px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { font-size: 18px; font-weight: 700; color: #12233c; white-space: nowrap; }
+.brand a { color: inherit; }
+.brand .accent { color: #2456a6; }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { padding: 6px 14px; border-radius: 999px; font-size: 14px; color: #3d4a5c; }
+nav a:hover { background: #eef2f7; }
+nav a.active { background: #2456a6; color: #fff; }
+main { max-width: 960px; margin: 0 auto; padding: 40px 24px 64px; }
+.card-page { background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 40px 44px; box-shadow: 0 1px 3px rgba(16,34,60,.05); }
+h1 { font-size: 28px; color: #12233c; margin-bottom: 8px; line-height: 1.35; }
+.meta { font-size: 13px; color: #7a8794; margin-bottom: 20px; }
+.divider { height: 3px; width: 64px; background: linear-gradient(90deg, #2456a6, #4f8bd9); border-radius: 2px; margin-bottom: 8px; }
+h2 { font-size: 19px; color: #12233c; margin: 2.2em 0 .8em; padding-left: 12px; border-left: 4px solid #2456a6; line-height: 1.4; }
+p { margin: 0 0 1em; font-size: 15.5px; }
+ul { margin: 0 0 1.2em; padding-left: 1.4em; }
+li { margin: .45em 0; font-size: 15.5px; }
+strong { color: #12233c; font-weight: 700; }
+footer { border-top: 1px solid #e5e9ef; background: #fff; }
+.footer-inner { max-width: 960px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.hero { margin-bottom: 34px; }
+.hero h1 { font-size: 30px; }
+.hero p { color: #55616f; font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 10px; background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 24px; box-shadow: 0 1px 3px rgba(16,34,60,.05); transition: transform .15s ease, box-shadow .15s ease; color: inherit; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(16,34,60,.12); }
+.card h2 { font-size: 18px; border-left: none; padding-left: 0; margin: 0; }
+.card .blurb { font-size: 14px; color: #55616f; line-height: 1.7; flex: 1; }
+.tag { display: inline-block; background: #eef2f7; color: #3d4a5c; border-radius: 999px; padding: 2px 10px; font-size: 12px; margin: 0 6px 4px 0; }
+.card .more { font-size: 14px; font-weight: 600; color: #2456a6; }
+@media (max-width: 640px) { .card-page { padding: 26px 20px; } main { padding: 24px 14px 48px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<div class="brand"><a href="index.html">美股<span class="accent">研究专题</span></a></div>
+<nav><a href="index.html" class="active">首页</a>
+<a href="半导体专题.html">半导体</a>
+<a href="数据中心专题.html">数据中心</a>
+<a href="网络安全专题.html">网络安全</a></nav>
+</div></header>
+<main><div class="hero"><h1>美股研究专题</h1><p>研究员观点笔记合集：半导体 · 数据中心 · 网络安全，共 3 篇，点击卡片阅读。</p></div><div class="grid"><a class="card" href="半导体专题.html"><div><span class="tag">AI 算力</span><span class="tag">HBM 内存</span><span class="tag">半导体周期</span></div><h2>半导体专题（一）</h2><div class="blurb">Citi / Jefferies / BofA / UBS 观点：算力供应链紧张、内存 HBM 超级周期、企业 AI 采用分化与开源模型趋势。</div><span class="more">阅读全文 →</span></a>
+<a class="card" href="数据中心专题.html"><div><span class="tag">数据中心</span><span class="tag">电力短缺</span><span class="tag">IPP / 核电</span></div><h2>数据中心专题</h2><div class="blurb">HSBC / Morgan Stanley / Jefferies 观点：数据中心供需失衡、美国电力净短缺 33GW、IPP 与核电资产重估。</div><span class="more">阅读全文 →</span></a>
+<a class="card" href="网络安全专题.html"><div><span class="tag">AI 安全</span><span class="tag">身份管理</span><span class="tag">代理安全</span></div><h2>网络安全专题</h2><div class="blurb">Morgan Stanley / Jefferies 观点：AI 安全支出三种情境、身份与漏洞管理、AI 代理安全平台之争。</div><span class="more">阅读全文 →</span></a></div></main>
+<footer><div class="footer-inner">
+<span>美股研究专题 · 研究员观点笔记</span>
+<span>仅供研究参考，不构成投资建议</span>
+</div></footer>
+</body>
+</html>
