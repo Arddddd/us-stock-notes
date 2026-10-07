@@ -9,15 +9,15 @@
 body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; background: #f4f6f8; color: #26303c; line-height: 1.8; }
 a { color: #2456a6; text-decoration: none; }
 header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e9ef; }
-.header-inner { max-width: 960px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.header-inner { max-width: 1000px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .brand { font-size: 18px; font-weight: 700; color: #12233c; white-space: nowrap; }
 .brand a { color: inherit; }
 .brand .accent { color: #2456a6; }
 nav { display: flex; gap: 6px; flex-wrap: wrap; }
-nav a { padding: 6px 14px; border-radius: 999px; font-size: 14px; color: #3d4a5c; }
+nav a { padding: 5px 12px; border-radius: 999px; font-size: 13.5px; color: #3d4a5c; }
 nav a:hover { background: #eef2f7; }
 nav a.active { background: #2456a6; color: #fff; }
-main { max-width: 960px; margin: 0 auto; padding: 40px 24px 64px; }
+main { max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; }
 .card-page { background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 40px 44px; box-shadow: 0 1px 3px rgba(16,34,60,.05); }
 h1 { font-size: 28px; color: #12233c; margin-bottom: 8px; line-height: 1.35; }
 .meta { font-size: 13px; color: #7a8794; margin-bottom: 20px; }
@@ -28,7 +28,7 @@ ul { margin: 0 0 1.2em; padding-left: 1.4em; }
 li { margin: .45em 0; font-size: 15.5px; }
 strong { color: #12233c; font-weight: 700; }
 footer { border-top: 1px solid #e5e9ef; background: #fff; }
-.footer-inner { max-width: 960px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.footer-inner { max-width: 1000px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .hero { margin-bottom: 34px; }
 .hero h1 { font-size: 30px; }
 .hero p { color: #55616f; font-size: 15px; }
@@ -48,26 +48,30 @@ footer { border-top: 1px solid #e5e9ef; background: #fff; }
 <nav><a href="index.html">首页</a>
 <a href="半导体专题一.html">半导体（一）</a>
 <a href="半导体专题二.html">半导体（二）</a>
-<a href="数据中心专题.html">数据中心</a>
-<a href="网络安全专题.html">网络安全</a>
-<a href="模型Agent.html" class="active">模型·Agent</a></nav>
+<a href="大模型.html">大模型</a>
+<a href="模型Agent.html" class="active">模型·Agent</a>
+<a href="AI软件专题一.html">AI软件（一）</a>
+<a href="AI软件专题二.html">AI软件（二）</a>
+<a href="数据中心专题一.html">数据中心（一）</a>
+<a href="数据中心专题二.html">数据中心（二）</a>
+<a href="网络安全专题.html">网络安全</a></nav>
 </div></header>
 <main><article class="card-page">
 <h1>模型与Agent专题</h1>
-<p class="meta">来源：美股-模型与Agent专题.md · 生成日期 2026-10-04</p>
+<p class="meta">来源：美股-模型与Agent专题.md · 生成日期 2026-10-07</p>
 <div class="divider"></div>
-<h2>Citi研究员Heath Terry：</h2>
+<h2>Citi研究员 Heath Terry：</h2>
 <ul><li><strong>SpaceX（SPCX.O）：</strong>买入。报告在“Recent Notes”中提到发起覆盖并给予买入评级，潜在目标价$900+，认为其处于多年催化剂丰富的弧线上。</li><li><strong>AMD,TXN,AMAT：</strong>买入。报告在“Hardware and Semis”部分提到作为半导体和设备股的买家。</li></ul>
 <p><strong>RSI（递归自我改进）初现端倪，推动算力需求新增长：</strong>早期证据表明RSI可能实现规模化，例如Google发布的Dream-RSI。尽管平均服务成本从5月28日的高点下降了54%，但这反而可能成为内部和外部使用量增长的顺风车。Meta推迟Muse发布以优先保障安全，以及Alexandr Wang指出大部分算力用于服务而非竞赛，反映了行业重心从单纯的性能竞赛转向安全、可审计性和对齐。然而，这种重心转移不太可能影响2026年全球AI相关资本支出达到1万亿美元、2027年达到1.6万亿美元的预测。</p>
 <p><strong>基础设施代理加速模型开发，降低部署门槛：</strong>Z.ai的Infra Agent在不到两周内将GLM-5.3-Flash投入生产，吞吐量triples，并在6天内处理了超过62万亿个token。虽然这尚未完全达到RSI水平，但自主优化正在加速模型开发并增加对推理和治理基础设施的需求。同时，Unsloth对GLM-5.3的量化使其体积缩小83%而保留约81%的准确率，降低了本地部署的内存和加速器要求，有助于扩大本地AI采用率并为大规模RSI奠定基础。</p>
 <p><strong>“Harness”设计成为实现智能的核心驱动力：</strong>Harness（harness/适配器）设计正成为实现智能的关键。在ARC-AGI-3基准测试中，为同一模型添加提供商适配器Harness可将性能从62.71%提升至99.95%，并将成本降低28%0。Salesforce也发现，进化其agent harness可将企业agent任务的平均成功率从29.2%提升至78.0%，而无需更改底层模型。这表明越来越多的智能增益来自Harness，强化了应用层作为提供商和企业差异化关键来源的地位。</p>
 <p><strong>模型发布节奏放缓，但专有模型智力水平持续领先：</strong>在过去90天中，专有模型发布量环比增长31%，达到68个，而开源模型保持平稳。自8月1日以来，约69%的发布为其提供商建立了新的智力高点。专有模型与开源模型之间的智力差距依然存在，且专有模型在高端使用中仍占主导地位，尽管模型路由的采用率正在增长。</p>
-<h2>UBS研究员Haley Tam：</h2>
+<h2>UBS研究员 Haley Tam：</h2>
 <ul><li><strong>AJ BELL PLC（AJBA.L）：</strong>买入。作为欧洲平台之一，可能在行业整合中受益或具有相对韧性。</li><li><strong>FinecoBank S.P.A（FBK.MI）：</strong>买入。具备广泛的产品线和能力，符合UBS看好的韧性平台特征。</li><li><strong>IG Group PLC（GG.L）：</strong>买入。在差价合约和交易领域具有领先地位，产品线丰富。</li><li><strong>St James&#x27;s Place PLC（SJPL）：</strong>买入。拥有粘性较强的财富管理和保险业务。</li><li><strong>flatex DEGIRO SE （FTKn.DE）：</strong>买入。 低成本运营模式，符合低价优势策略。</li><li><strong>Avanza （AVANZ.ST）：</strong>中性。运营利润率较高，可能面临估值压力。</li><li><strong>Nordnet（SAVE.ST）：</strong>中性。运营利润率较高，可能面临估值压力。</li><li><strong>Swissquote Group Holding SA （SQN.S）：</strong>中性。资产收入收益率最高，可能面临竞争加剧带来的利润率压缩险。</li><li><strong>aberdeen （ABDN.L）：</strong>卖出。表现不佳，面临结构性挑战。</li></ul>
 <p><strong>代理式AI对金融服务平台构成潜在威胁，可能降低客户粘性并压缩利润：</strong>代理式AI（Agentic AI）和前沿模型有望通过易于使用的聊天界面主动为用户组织生活、跟踪价格、审计订阅等。若AI代理成为消费者做出金融决策的主要途径，能够不断扫描交易平台以寻找最佳执行、现金利息支付等条件并执行低摩擦的账户切换，平台客户的生命周期可能会缩短，获客成本上升，收入收益率下降，从而根本性地改变平台的商业经济模式。</p>
 <p><strong>欧洲平台受监管保护，短期冲击小于美国：</strong>尽管Meta Muse等AI工具在美国引发市场对银行和经纪商股价的担忧，但欧洲（包括英国）由于存在较高的监管门槛（如欧盟和英国的GDPR、欧盟AI法案），代理式AI在深度连接私人消息、支付账户以及执行开设账户、转移资产等受监管金融行动方面面临更多限制。因此，欧洲平台受到的直接冲击相对较小。</p>
 <p><strong>具备低价优势和广泛产品线的平台更具韧性：</strong>长期来看，客户摩擦力的降低和竞争的加剧可能导致平台收入和利润率下降，市盈率倍数可能持续走低。然而，那些已经在消费者定价低端运营、拥有广泛产品和能力（包括粘性更强的养老金或保险包装产品）的平台被认为最具韧性。相比之下，运营利润率极高（可能表明“过度盈利”）的Avanza和Nordnet，以及资产收入收益率最高的Swissquote，可能面临更大的估值调整压力。</p>
-<h2>Jefferies研究员Brent Thill：</h2>
+<h2>Jefferies研究员 Brent Thill：</h2>
 <ul><li><strong>Meta Platforms （META）：</strong>买入，目标价$875。理由：Muse应用成功推动估值重评，AI货币化潜力巨大，算力壁垒稳固。</li><li><strong>CoreWeave （CRWV）：</strong>买入，目标价$150。理由：AI代理普及将驱动算力需求爆炸式增长，利好基础设施提供商。</li><li><strong>Oracle（ORCL）：</strong>买入，目标价$290。理由：同样受益于AI推理体积的增加和云服务需求。</li><li><strong>Alphabet （G00GL）：</strong>买入，目标价$445。理由：尽管面临挑战，但数据优势和生态系统使其能有效应对AI代理趋势。</li><li><strong>Microsoft （MSFT）：</strong>买入，目标价$575。理由：AI转型中的稳健表现及M365商业版的耐久性。</li></ul>
 <p><strong>Meta的Muse应用登顶iOS榜单，标志着AI从聊天机器人向代理式应用（AgenticAI）演进，利好服务器CPU需求：</strong>Meta推出的AI代理应用Muse在发布10天后即登顶美国iOS应用商店榜首，这表明AI正逐渐被普通消费者广泛接受。随着AI代理应用的普及，推理、编排和基础设施工作负载将增加，从而推动对服务器CPU的需求回升。</p>
 <p><strong>Muse是一款“杀手级”应用，推动Meta估值重评：</strong>Muse在发布后展现出前所未有的消费者采用率，远超Claude和Gemini的早期表现。Muse不仅是一款优秀的产品，更是消费级AI代理（Consumer Agents）的转折点。基于其巨大的monetization（货币化）潜力，包括电商交易抽成和付费订阅，预计将推动FY27收入增长超过20%。将Meta的目标价从710美元上调至875美元，对应2027年预期每股收益（EPS）的25倍市盈率。</p>
@@ -75,7 +79,7 @@ footer { border-top: 1px solid #e5e9ef; background: #fff; }
 <p><strong>AI算力投资转化为竞争壁垒：</strong>市场此前担忧Meta的AI投资过重，但报告指出，这些投资支持了免费产品的推出和专用虚拟机的运行，降低了用户采用门槛，并使小型竞争对手难以抗衡。随着Muse展示消费级代理的强大功能，预计计算需求将爆炸式增长，这将利好超大规模云服务商（Hyperscalers）如CoreWeave （CRWV）利 Oracle（ORCL）。</p>
 <p><strong>对行业格局的影响，亚马逊、谷歌与Snowflake：</strong></p>
 <ul><li>亚马逊（AMZN）：短期面临广告和搜索流量被代理分流的风险，但AWS将受益于代理工作流带来的算力需求增加，且其零售履约护城河依然稳固。</li><li>谷歌（GO0GL）：虽面临搜索流量减少的理论风险，但凭借数据优势和应用生态，有望推出自己的个人代理（如“Google Genius”）进行反击，整体影响偏正面。</li><li>Snowflake（SNOW）：Muse的成功验证了“工作代理”（Work Agent）的市场需求，即用户愿意委托多步骤任务。这将利好Snowflake的企业级AI助手CoCo，推动数据平台消耗量的增加。</li></ul>
-<h2>中金公司研究员成乔升：</h2>
+<h2>中金公司研究员 成乔升：</h2>
 <p><strong>DeepSeek V4.1 Flash通过架构优化显著降低算力与存储成本，为现有硬件“续命”：</strong>V4.1Flash并非单纯缩小模型，而是通过CED、CSA2、Engram等系统性创新，将Global KV Cache压缩约75%，Persistent KV Cache压缩约87.5%。这使得原本需NVIDIA Blackwell系列承载的10T参数模型，有望下沉至Hopper系列（如H200）甚至国产昇腾960系列部署，打破了模型规模与硬件需求同步膨胀的线性关系。</p>
 <p><strong>国产算力芯片具备承载10T模型的硬件基础，逻辑闭环得到印证：</strong>华为昇腾960DT的理论FP8算力已进入H200量级，且HBM容量与带宽更具优势。结合V4.1 Flash的降本增效逻辑，2026-2027年主流性能的国产算力芯片有望支持国产模型向10T-20T参数量平台扩张，验证了国产算力需求的长期逻辑。</p>
 <p><strong>单位智能成本大幅下降，API价格具备竞争力：</strong>V4.1 Flash在Coding/Agent场景已具备替代V4-Pro的能力，且API价格进一步下降。通过稀疏激活（Prefill 8B / Decode 16B参数）和投机解码（DSpark），大幅提升了单位GPU的吞吐效率，改善了AI商业化的经济性。</p>

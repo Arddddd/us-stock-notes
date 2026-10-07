@@ -9,15 +9,15 @@
 body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; background: #f4f6f8; color: #26303c; line-height: 1.8; }
 a { color: #2456a6; text-decoration: none; }
 header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e9ef; }
-.header-inner { max-width: 960px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.header-inner { max-width: 1000px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .brand { font-size: 18px; font-weight: 700; color: #12233c; white-space: nowrap; }
 .brand a { color: inherit; }
 .brand .accent { color: #2456a6; }
 nav { display: flex; gap: 6px; flex-wrap: wrap; }
-nav a { padding: 6px 14px; border-radius: 999px; font-size: 14px; color: #3d4a5c; }
+nav a { padding: 5px 12px; border-radius: 999px; font-size: 13.5px; color: #3d4a5c; }
 nav a:hover { background: #eef2f7; }
 nav a.active { background: #2456a6; color: #fff; }
-main { max-width: 960px; margin: 0 auto; padding: 40px 24px 64px; }
+main { max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; }
 .card-page { background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 40px 44px; box-shadow: 0 1px 3px rgba(16,34,60,.05); }
 h1 { font-size: 28px; color: #12233c; margin-bottom: 8px; line-height: 1.35; }
 .meta { font-size: 13px; color: #7a8794; margin-bottom: 20px; }
@@ -28,7 +28,7 @@ ul { margin: 0 0 1.2em; padding-left: 1.4em; }
 li { margin: .45em 0; font-size: 15.5px; }
 strong { color: #12233c; font-weight: 700; }
 footer { border-top: 1px solid #e5e9ef; background: #fff; }
-.footer-inner { max-width: 960px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.footer-inner { max-width: 1000px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .hero { margin-bottom: 34px; }
 .hero h1 { font-size: 30px; }
 .hero p { color: #55616f; font-size: 15px; }
@@ -48,15 +48,23 @@ footer { border-top: 1px solid #e5e9ef; background: #fff; }
 <nav><a href="index.html" class="active">首页</a>
 <a href="半导体专题一.html">半导体（一）</a>
 <a href="半导体专题二.html">半导体（二）</a>
-<a href="数据中心专题.html">数据中心</a>
-<a href="网络安全专题.html">网络安全</a>
-<a href="模型Agent.html">模型·Agent</a></nav>
+<a href="大模型.html">大模型</a>
+<a href="模型Agent.html">模型·Agent</a>
+<a href="AI软件专题一.html">AI软件（一）</a>
+<a href="AI软件专题二.html">AI软件（二）</a>
+<a href="数据中心专题一.html">数据中心（一）</a>
+<a href="数据中心专题二.html">数据中心（二）</a>
+<a href="网络安全专题.html">网络安全</a></nav>
 </div></header>
-<main><div class="hero"><h1>美股研究专题</h1><p>研究员观点笔记合集（共 5 篇），点击卡片阅读。</p></div><div class="grid"><a class="card" href="半导体专题一.html"><div><span class="tag">AI 算力</span><span class="tag">HBM 内存</span><span class="tag">半导体周期</span></div><h2>半导体专题（一）</h2><div class="blurb">Citi / Jefferies / BofA / UBS 观点：算力供应链紧张、内存 HBM 超级周期、企业 AI 采用分化与开源模型趋势。</div><span class="more">阅读全文 →</span></a>
+<main><div class="hero"><h1>美股研究专题</h1><p>研究员观点笔记合集（共 9 篇），点击卡片阅读。</p></div><div class="grid"><a class="card" href="半导体专题一.html"><div><span class="tag">AI 算力</span><span class="tag">HBM 内存</span><span class="tag">半导体周期</span></div><h2>半导体专题（一）</h2><div class="blurb">Citi / Jefferies / BofA / UBS 观点：算力供应链紧张、内存 HBM 超级周期、企业 AI 采用分化与开源模型趋势。</div><span class="more">阅读全文 →</span></a>
 <a class="card" href="半导体专题二.html"><div><span class="tag">半导体设备</span><span class="tag">ASIC</span><span class="tag">存储周期</span></div><h2>半导体专题（二）</h2><div class="blurb">JPM / Morgan Stanley / GS / BofA 观点：半导体设备与 ASIC 上行周期、内存涨价、模拟芯片复苏与 AI 互联。</div><span class="more">阅读全文 →</span></a>
-<a class="card" href="数据中心专题.html"><div><span class="tag">数据中心</span><span class="tag">电力短缺</span><span class="tag">IPP / 核电</span></div><h2>数据中心专题</h2><div class="blurb">HSBC / Morgan Stanley / Jefferies 观点：数据中心供需失衡、美国电力净短缺 33GW、IPP 与核电资产重估。</div><span class="more">阅读全文 →</span></a>
-<a class="card" href="网络安全专题.html"><div><span class="tag">AI 安全</span><span class="tag">身份管理</span><span class="tag">代理安全</span></div><h2>网络安全专题</h2><div class="blurb">Morgan Stanley / Jefferies 观点：AI 安全支出三种情境、身份与漏洞管理、AI 代理安全平台之争。</div><span class="more">阅读全文 →</span></a>
-<a class="card" href="模型Agent.html"><div><span class="tag">Agentic AI</span><span class="tag">RSI</span><span class="tag">模型降本</span></div><h2>模型与Agent专题</h2><div class="blurb">Citi / UBS / Jefferies / 中金 观点：Muse 消费级代理、RSI 递归自我改进、DeepSeek V4.1 降本与国产算力。</div><span class="more">阅读全文 →</span></a></div></main>
+<a class="card" href="大模型.html"><div><span class="tag">大模型</span><span class="tag">API 价格战</span><span class="tag">GPU 租赁</span></div><h2>大模型专题</h2><div class="blurb">HSBC / JPM / Jefferies / BofA 观点：中美模型差距与 API 价格战、Jev 低成本模型、Token 支出与 GPU 租赁分化。</div><span class="more">阅读全文 →</span></a>
+<a class="card" href="模型Agent.html"><div><span class="tag">Agentic AI</span><span class="tag">RSI</span><span class="tag">模型降本</span></div><h2>模型与Agent专题</h2><div class="blurb">Citi / UBS / Jefferies / 中金 观点：Muse 消费级代理、RSI 递归自我改进、DeepSeek V4.1 降本与国产算力。</div><span class="more">阅读全文 →</span></a>
+<a class="card" href="AI软件专题一.html"><div><span class="tag">AI 应用</span><span class="tag">可观测性</span><span class="tag">IT 服务</span></div><h2>AI软件专题（一）</h2><div class="blurb">GS / Barclays / Jefferies 观点：AI 应用周期与数据现代化、可观测性与安全、CRM 细分与 IT 服务智能套利转型。</div><span class="more">阅读全文 →</span></a>
+<a class="card" href="AI软件专题二.html"><div><span class="tag">2C Agent</span><span class="tag">持久性代理</span><span class="tag">软件信用</span></div><h2>AI软件专题（二）</h2><div class="blurb">DB / 中金 / UBS / Barclays 观点：软件债务到期墙、Manus 2.0 与 2C Agent、持久性消费者代理与 OTA 去中介化。</div><span class="more">阅读全文 →</span></a>
+<a class="card" href="数据中心专题一.html"><div><span class="tag">数据中心</span><span class="tag">电力短缺</span><span class="tag">IPP / 核电</span></div><h2>数据中心专题（一）</h2><div class="blurb">HSBC / Morgan Stanley / Jefferies 观点：数据中心供需失衡、美国电力净短缺 33GW、IPP 与核电资产重估。</div><span class="more">阅读全文 →</span></a>
+<a class="card" href="数据中心专题二.html"><div><span class="tag">存储元件</span><span class="tag">AI 网络</span><span class="tag">服务器 CPU</span></div><h2>数据中心专题（二）</h2><div class="blurb">MS / BofA / GS 观点：HDD 与日本元件链、AI 数据中心 TAM 2.2 万亿美元、以太网交换机与服务器 CPU 前景。</div><span class="more">阅读全文 →</span></a>
+<a class="card" href="网络安全专题.html"><div><span class="tag">AI 安全</span><span class="tag">身份管理</span><span class="tag">代理安全</span></div><h2>网络安全专题</h2><div class="blurb">Morgan Stanley / Jefferies 观点：AI 安全支出三种情境、身份与漏洞管理、AI 代理安全平台之争。</div><span class="more">阅读全文 →</span></a></div></main>
 <footer><div class="footer-inner">
 <span>美股研究专题 · 研究员观点笔记</span>
 <span>仅供研究参考，不构成投资建议</span>
