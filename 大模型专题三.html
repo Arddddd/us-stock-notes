@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大模型专题（三） · 美股研究专题</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; background: #f4f6f8; color: #26303c; line-height: 1.8; }
+a { color: #2456a6; text-decoration: none; }
+header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e9ef; }
+.header-inner { max-width: 1000px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { font-size: 18px; font-weight: 700; color: #12233c; white-space: nowrap; }
+.brand a { color: inherit; }
+.brand .accent { color: #2456a6; }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { padding: 5px 12px; border-radius: 999px; font-size: 13.5px; color: #3d4a5c; }
+nav a:hover { background: #eef2f7; }
+nav a.active { background: #2456a6; color: #fff; }
+main { max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; }
+.card-page { background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 40px 44px; box-shadow: 0 1px 3px rgba(16,34,60,.05); }
+h1 { font-size: 28px; color: #12233c; margin-bottom: 8px; line-height: 1.35; }
+.meta { font-size: 13px; color: #7a8794; margin-bottom: 20px; }
+.divider { height: 3px; width: 64px; background: linear-gradient(90deg, #2456a6, #4f8bd9); border-radius: 2px; margin-bottom: 8px; }
+h2 { font-size: 19px; color: #12233c; margin: 2.2em 0 .8em; padding-left: 12px; border-left: 4px solid #2456a6; line-height: 1.4; }
+p { margin: 0 0 1em; font-size: 15.5px; }
+ul { margin: 0 0 1.2em; padding-left: 1.4em; }
+li { margin: .45em 0; font-size: 15.5px; }
+strong { color: #12233c; font-weight: 700; }
+footer { border-top: 1px solid #e5e9ef; background: #fff; }
+.footer-inner { max-width: 1000px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.hero { margin-bottom: 34px; }
+.hero h1 { font-size: 30px; }
+.hero p { color: #55616f; font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 10px; background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 24px; box-shadow: 0 1px 3px rgba(16,34,60,.05); transition: transform .15s ease, box-shadow .15s ease; color: inherit; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(16,34,60,.12); }
+.card h2 { font-size: 18px; border-left: none; padding-left: 0; margin: 0; }
+.card .blurb { font-size: 14px; color: #55616f; line-height: 1.7; flex: 1; }
+.tag { display: inline-block; background: #eef2f7; color: #3d4a5c; border-radius: 999px; padding: 2px 10px; font-size: 12px; margin: 0 6px 4px 0; }
+.card .more { font-size: 14px; font-weight: 600; color: #2456a6; }
+@media (max-width: 640px) { .card-page { padding: 26px 20px; } main { padding: 24px 14px 48px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<div class="brand"><a href="index.html">美股<span class="accent">研究专题</span></a></div>
+<nav><a href="index.html">首页</a>
+<a href="半导体专题一.html">半导体（一）</a>
+<a href="半导体专题二.html">半导体（二）</a>
+<a href="半导体专题三.html">半导体（三）</a>
+<a href="半导体专题四.html">半导体（四）</a>
+<a href="存储专题.html">存储</a>
+<a href="大模型专题一.html">大模型（一）</a>
+<a href="大模型专题二.html">大模型（二）</a>
+<a href="大模型专题三.html" class="active">大模型（三）</a>
+<a href="模型Agent.html">模型·Agent</a>
+<a href="AI软件专题一.html">AI软件（一）</a>
+<a href="AI软件专题二.html">AI软件（二）</a>
+<a href="AI软件专题三.html">AI软件（三）</a>
+<a href="数据中心专题一.html">数据中心（一）</a>
+<a href="数据中心专题二.html">数据中心（二）</a>
+<a href="网络安全专题.html">网络安全</a>
+<a href="中期选举.html">中期选举</a>
+<a href="资本开支.html">资本开支</a></nav>
+</div></header>
+<main><article class="card-page">
+<h1>大模型专题（三）</h1>
+<p class="meta">来源：美股-大模型专题（三）.md · 生成日期 2026-10-19</p>
+<div class="divider"></div>
+<h2>HSBC研究员 Nicolas Cote-Colisson：</h2>
+<ul><li><strong>Meta Platforms（META US）：</strong>买入，目标价USD 830.00。理由是新发布的Muse Wonder模型在基准测试中表现优异，具备强大的专业领域知识和记忆能力，且定价具有竞争力；即将发布的Q3财报有望提供正面催化。</li></ul>
+<p><strong>Meta发布新一代Muse Wonder，在记忆与上下文保留方面表现优异：</strong>Meta于2026年10月12日推出了Muse Wonder和Muse Wonder Full模型。根据MemoryBench基准测试，Muse Wonder得分85.6%，Muse Wonder Full得分85.5%，均高于Claude Opus（81.5%）GPT-6 Astra（81.4%），显示出其在长期记忆和上下文理解方面的强大能力。</p>
+<p><strong>新模型具备专业领域知识及“主动记忆”与“主动专注”功能：</strong>Muse模型在法律、金融、健康和编码等领域拥有专业知识。其引入的“Active Memory”使其能记住之前的任务对话，“Active Focus”则帮助模型在遇到困难时尝试其他方法、从错误中恢复并在执行重要操作前进行确认，增强了其实用性和安全性。</p>
+<p><strong>定价策略具有竞争力，直接对标行业顶尖水平：</strong>Muse Wonder通过付费订阅和API提供服务，输入价格为每百万token4美元，输出为20美元，成本大致相当于GPT-6 Sol或Opus 5.5，显示出Meta在保持高性能的同时具备成本竞争力。</p>
+<h2>Citi研究员 Ronald Josey：</h2>
+<p><strong>Meta推出SOTA模型Muse Wonder，显著增强AI推理与任务处理能力：</strong>Meta发布了Muse Wonder系列模型（包括Muse Wonder和Muse Wonder Full， 代号Watermelon），这些模型在推理能力、可靠性以及完成复杂任务方面表现出色，具备“主动记忆”（Active Memory）和“主动专注”（Active Focus）功能。Wonder模型将首先服务于订阅用户，随后赋能Muse个人智能体，并支持专业和企业工作流。尽管面临Google Gemini 4 Argon等竞品的激烈竞争，但Meta凭借预计2027年计算能力翻倍的潜力，有望加速个人和专业超级智能产品的发布节奏。</p>
+<p><strong>Muse Wonder聚焦编码、领域专业知识及智能体应用，性能位居前列：</strong>Muse Wonder系列在个人与专业智能体、长周期编码、记忆保持及金融、法律、健康等领域专业知识方面达到了业界最先进水平（SOTA）。通过结合跨对话携带相关上下文的“主动记忆”和尝试替代方法的“主动专注”，模型在长horizon任务中表现优异。据Artificial Analysis数据显示， Muse Wonder Full在智能指数中排名第三。目前，Wonder模型已通过Meta Model API和Muse Code提供，其中Full版本仅对Muse Code订阅用户开放。</p>
+<p><strong>深层推理能力解锁新体验，推动Muse采用率持续攀升：</strong>随着Wonder模型赋能Muse，其深层推理能力将提升Muse的性能与效率，催生如Muse Voice（实时对话）和Business Calls（代表用户拨打电话）等个人超级智能新体验。鉴于Muse是目前少数专注于规模化个人超级智能的智能体之一，其采用率有望持续增长。数据显示，Muse累计下载量已达860万次，美国日活跃用户（DAU）超过200万，Meta正开始利用其分发优势。</p>
+<p><strong>计算基础设施扩张构建竞争壁垒，维持买入评级：</strong>Meta的Wonder模型在其今年早些时候推出的1GW Prometheus数据中心训练而成。预计到2027年，Meta总计算能力将达到约14GW，同比可能翻倍，这将转化为新模型和产品的竞争优势，缓解市场普遍面临的算力约束。基于此，分析师维持对Meta的“买入”评级，目标价定为800美元，对应2027年预期GAAP每股收益36.92美元的22倍市盈率。</p>
+<h2>HSBC研究员 Ritchie Sun：</h2>
+<p><strong>Z.AI发布GLM-Legal，标志着其在专业协作领域的重要进展：</strong>Z.AI于2026年10月12日推出了GLM-Legal，这是其利用大语言模型（LLM）向更广泛的专业协作（Professional Cowork） 迈进的关键一步，超越了单一的代码生成任务。该模型在复杂执行、法律推理和实际起草方面表现出前沿水平的性能，同时保持了高效的推理能力。</p>
+<p><strong>GLM-Legal在法律基准测试中表现优异，媲美顶级闭源模型：</strong>在Harvey LAB基准测试中，GLM-Legal得分19.2%，高于Kimi K3、 Claude Fable 5和GPT-6Astra。尽管参数规模较小，但在LegalBench（法律推理）和PLawBench（中国本地化实践）中的得分与顶级闭源前沿模型相当。目前该模型通过API和AutoClaw开放访问，但尚未开源权重。</p>
+<p><strong>专业化训练流程确保模型在法律领域的深度 competence：</strong>GLM-Legal基于GLM-5.3 Flash构建，通过专门的中间训练和高效的后训练扩展领域能力：1）中间训练阶段扩大高质量法律语料库体积，使模型能在密集领域背景下学习法律概念、法规规则和解释框架；2）后训练阶段通过数万个真实法律环境中的强化学习，将领域知识转化为任务执行能力，使模型能规划分析、推进工作流并在特定约束下生成交付物；3）生产反馈循环中，法律专业人士根据具体标准评估输出，并将反馈纳入后续训练周期。</p>
+<p><strong>网络安全与法律是Z.AI当前进展较快的两个关键领域：</strong>Z.AI认为“协作”模式交付的工作产品可由专业人士审查，融入实际工作流并按完成任务定价。目前，网络安全和法律是Z.AI取得较多进展的两个关键领域。</p>
+</article></main>
+<footer><div class="footer-inner">
+<span>美股研究专题 · 研究员观点笔记</span>
+<span>仅供研究参考，不构成投资建议</span>
+</div></footer>
+</body>
+</html>
