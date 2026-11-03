@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI硬件专题（一） · 美股研究专题</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; background: #f4f6f8; color: #26303c; line-height: 1.8; }
+a { color: #2456a6; text-decoration: none; }
+header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e9ef; }
+.header-inner { max-width: 1000px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { font-size: 18px; font-weight: 700; color: #12233c; white-space: nowrap; }
+.brand a { color: inherit; }
+.brand .accent { color: #2456a6; }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { padding: 5px 12px; border-radius: 999px; font-size: 13.5px; color: #3d4a5c; }
+nav a:hover { background: #eef2f7; }
+nav a.active { background: #2456a6; color: #fff; }
+main { max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; }
+.card-page { background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 40px 44px; box-shadow: 0 1px 3px rgba(16,34,60,.05); }
+h1 { font-size: 28px; color: #12233c; margin-bottom: 8px; line-height: 1.35; }
+.meta { font-size: 13px; color: #7a8794; margin-bottom: 20px; }
+.divider { height: 3px; width: 64px; background: linear-gradient(90deg, #2456a6, #4f8bd9); border-radius: 2px; margin-bottom: 8px; }
+h2 { font-size: 19px; color: #12233c; margin: 2.2em 0 .8em; padding-left: 12px; border-left: 4px solid #2456a6; line-height: 1.4; }
+p { margin: 0 0 1em; font-size: 15.5px; }
+ul { margin: 0 0 1.2em; padding-left: 1.4em; }
+li { margin: .45em 0; font-size: 15.5px; }
+strong { color: #12233c; font-weight: 700; }
+footer { border-top: 1px solid #e5e9ef; background: #fff; }
+.footer-inner { max-width: 1000px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.hero { margin-bottom: 34px; }
+.hero h1 { font-size: 30px; }
+.hero p { color: #55616f; font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 10px; background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 24px; box-shadow: 0 1px 3px rgba(16,34,60,.05); transition: transform .15s ease, box-shadow .15s ease; color: inherit; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(16,34,60,.12); }
+.card h2 { font-size: 18px; border-left: none; padding-left: 0; margin: 0; }
+.card .blurb { font-size: 14px; color: #55616f; line-height: 1.7; flex: 1; }
+.tag { display: inline-block; background: #eef2f7; color: #3d4a5c; border-radius: 999px; padding: 2px 10px; font-size: 12px; margin: 0 6px 4px 0; }
+.card .more { font-size: 14px; font-weight: 600; color: #2456a6; }
+@media (max-width: 640px) { .card-page { padding: 26px 20px; } main { padding: 24px 14px 48px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<div class="brand"><a href="index.html">美股<span class="accent">研究专题</span></a></div>
+<nav><a href="index.html">首页</a>
+<a href="半导体专题一.html">半导体（一）</a>
+<a href="半导体专题二.html">半导体（二）</a>
+<a href="半导体专题三.html">半导体（三）</a>
+<a href="半导体专题四.html">半导体（四）</a>
+<a href="存储专题.html">存储</a>
+<a href="AI硬件专题一.html" class="active">AI硬件（一）</a>
+<a href="大模型专题一.html">大模型（一）</a>
+<a href="大模型专题二.html">大模型（二）</a>
+<a href="大模型专题三.html">大模型（三）</a>
+<a href="大模型专题四.html">大模型（四）</a>
+<a href="模型Agent.html">模型·Agent</a>
+<a href="AI软件专题一.html">AI软件（一）</a>
+<a href="AI软件专题二.html">AI软件（二）</a>
+<a href="AI软件专题三.html">AI软件（三）</a>
+<a href="AI软件专题四.html">AI软件（四）</a>
+<a href="数据中心专题一.html">数据中心（一）</a>
+<a href="数据中心专题二.html">数据中心（二）</a>
+<a href="网络安全专题.html">网络安全</a>
+<a href="中期选举专题一.html">中期选举（一）</a>
+<a href="中期选举专题二.html">中期选举（二）</a>
+<a href="资本开支专题一.html">资本开支（一）</a>
+<a href="资本开支专题二.html">资本开支（二）</a></nav>
+</div></header>
+<main><article class="card-page">
+<h1>AI硬件专题（一）</h1>
+<p class="meta">来源：美股-AI硬件专题（一）.md · 生成日期 2026-11-03</p>
+<div class="divider"></div>
+<h2>JPM研究员 Joseph Cardoso：</h2>
+<p><strong>10月LLM代币支出增长加速，显示AI基础设施需求依然强劲：</strong>10月OpenRouter平台上的代币支出环比增长加速至+40%，而9月为+28%，同比增速达20倍。这一增长主要由强劲的用量增长和加权平均价格的反弹推动，其中价格反弹主要由于向更高价模型（尤其是Claude Opus 5.5）的混合转移，以及同模型重新定价（如GPT-5.6Sol价格翻倍）。尽管代币用量环比增速从9月的+71%放缓至+25%，但支出增长仍然强劲，表明AI基础设施需求保持旺盛。</p>
+<p><strong>GPU租赁价格信号喜忧参半，A100继续下跌，H100反弹，B200增长加速：</strong>在非超大规模云厂商的GPU租赁市场，A100价格10月环比下跌3.5%至1.53美元/GPU小时；H100价格反弹6.5%至2.83美元/GPU小时；B200价格增长4.7%至6.00美元/GPU小时。B200对H100的比价从9月的2.16倍降至2.12倍，而H100对A100的比价从1.67倍升至1.85倍。这反映出不同代际GPU的供需动态存在分化。</p>
+<p><strong>DRAM与NAND合同价格增长预计在四季度进一步放缓，但AI服务器需求仍形成支撑：</strong>根据TrendForce数据，3Q26 DRAM合同价格环比增长16%，NAND增长21%；预计4Q26 DRAM合同价格环比增长13%，NAND增长18%，增速均放缓。TrendForce将放缓归因于此前价格涨幅较高、消费需求承压、客户SSD库存充足以及部分服务器DRAM供应商的长期定价协议。但AI服务器需求以及产能向服务器产品倾斜继续支撑价格，企业级SSD是唯一预计4Q26价格增长加速的类别。</p>
+<p><strong>代币用量增长环比放缓，但封闭权重模型支出加速，开放权重模型支出增长急剧放缓：</strong>10月代币用量环比增长25%，低于9月的71%和8月的47%；封闭权重模型（OpenAI、Anthropic等）用量环比增长30%，开放权重模型（DeepSeek、Moonshot AI等）增长21%。但在支出端，封闭权重模型支出环比增长49%，开放权重模型仅增长15%。支出份额方面，封闭权重模型占77%。</p>
+<h2>BofA研究员 Vivek Arya：</h2>
+<ul><li><strong>AMD（买入）：</strong>目标价720美元。推荐理由：服务器CPU份额增长、AI CPU需求强劲、Venice发布和更丰富的核心数/ASP组合带来的上行空间。</li><li><strong>英特尔（买入）：</strong>目标价145美元。推荐理由：供应改善、定价走强、18A Panther Lake提升毛利率、代理AI驱动高核心数CPU需求。</li><li><strong>ARM（中性）：</strong>目标价260美元。推荐理由：数据中心势头良好，但AGI上行受供应限制。</li><li><strong>高通（减持）：</strong>目标价180美元。推荐理由：手机市场疲软、增长前景有限。</li></ul>
+<p><strong>服务器CPU市场TAM将在2030年超过2100亿美元，2026-2030年复合增长率36.1%：</strong>随着AI计算节点和代理型AI（Agentic AI）对CPU需求的快速提升，服务器CPU市场将从2026年的614亿美元增长至2030年的2106亿美元。其中，传统/基础设施即服务（laaS）CPU市场预计保持稳定个位数增长至约300亿美元，AI计算/头节点需求将达到900亿美元以上，而新的代理编排CPU需求将增长至900亿美元以上。报告还预计代理CPU出货量将从2026年的约250万颗增至2030年的约2640万颗。</p>
+<p><strong>代理型AI将带来巨大的CPU增量需求，每10亿用户可能对应约2100万颗CPU：</strong>基于Meta Muse等代理AI工具的资源需求，报告测算当前每100万代理用户需要约2700颗CPU（按2 vCPU/用户、25%利用率），而未来当代理AI成为主流、资源分配增加、利用率提高后，每100万用户可能需要约2.1万颗CPU。由此推算，10亿代理AI用户可能带来约2100万颗CPU增量，与报告预测的2030年代理CPU出货量2640万颗基本一致。</p>
+<p><strong>AMD在2027年数据中心共识预期高，但仍有上行空间：</strong>报告预计AMDQ3业绩将超预期并上调Q4指引，但2027年数据中心收入共识已达同比+120%（约710亿美元），不过管理层上次指引增长超100%。报告仍看到上行至同比+125-130%的可能性（730-740亿美元以上），受益于代理需求、Venice发布、更丰富的核心数/ASP组合以及Helios ramp。更丰富的CPU组合有利于毛利率，部分抵消GPU稀释影响。客户融资和部署执行是关键风险，但SPCX对AI和基础设施资本开支的承诺是利好。</p>
+<p><strong>英特尔预计将实现健康的超预期并上调指引，受益于供应改善和定价走强：</strong>报告预计英特尔Q3业绩将超预期并上调指引，得益于供应改善和下半年定价走强。继Q2由ASP驱动后，英特尔3/18A服务器产量提升有助于追赶整体需求，2026年行业服务器CPU单位同比增长25-30%，而英特尔仅+7-8%。18A Panther Lake （PC）的毛利率增长、18A经济性改善以及代理AI驱动的高核心数、高ASP产品转变有望支撑ASP/利润率上行，预计2027年毛利率达到44.5-45.0%，高于共识44.1%。晶圆代工进展积极，2027年EMIB-TA/PHVM和2028年14A wafer HVM可能资本开支增加，利好半导体设备公司。</p>
+<p><strong>ARM数据中心势头持续，但AGI上行可能受供应限制：</strong>报告预计边缘AI（智能手机）疲软将被高端产品组合转移和中国市场温和复苏所抵消。云端AI（数据中心）版税将持续增长，但仍仅占版权收入的20-25%。关键的AGICPU上行（2027下半年-2028+ramping）可能相对于CPU同行受限，因为晶圆厂/供应规模较小。</p>
+<p><strong>市场份额方面，ARM将成为增长最快的架构，英特尔份额下降但仍是最大供应商：</strong>按价值份额，报告预计到2030年ARM（含merchant和custom）将占约47%的服务器CPU市场，其中ARM merchant约38%，custom约9%；AMD约31%，英特尔约22%。按单位份额，英特尔仍以约36%保持第一，AMD约30%，ARM merchant22%， ARM custom约12%。ARM的增长受益于多个新merchant（ARM AGI、 Nvidia Vera、 QCOM CPU） 和custom（AWS Graviton 5， Google Axion、Microsoft Cobalt） 项目。</p>
+<h2>Barclay研究员 Tom O&#x27;Malley：</h2>
+<ul><li><strong>STX （Seagate）：</strong>评级增持（OW），目标价1250美元，基于21倍CY27EPS 58.31美元；理由：HDD行业定价上行，HAMR技术带来份额增长。</li><li><strong>WDC（Western Digital）：</strong>评级增持（OW），目标价620美元，基于21倍CY27EPS 29.88美元；理由：HDD供需紧张，定价和毛利率提升。</li><li><strong>LITE（Lumentum）：</strong>评级增持（OW），目标价1000美元；理由：互连/光学受益AI，估值回调提供机会。</li><li><strong>TXN（Texas Instruments）：</strong>评级中性 （EW）,但短期看好；理由：AI数据中心和汽车需求。</li><li><strong>CRUS（Cirrus Logic）：</strong>评级减持（UW），目标价95美元；理由：CY27无内容，苹果单元疲软，定价压力。</li><li><strong>QCOM（Qualcomm）：</strong>评级减持（UW），目标价180美元；理由：下行风险。</li></ul>
+<p><strong>市场回调并非传统半导体周期见顶，而是买入机会：</strong>报告认为SOX指数自Q3以来出现三次超过10%的回撤，最近两周回撤幅度较大，令投资者担忧是否见顶。但巴克莱不认同见顶观点，理由包括：1）晶圆代工前端产能约束直至2028年提供历史性可见性；2）消费应用投资回报率刚开始起飞；3）向开放模型转变对行业健康且提供额外需求驱动；4）SPV更好地利用领先企业资产负债表上的巨额现金储备。报告认为当前财报期具有挑战性，因为中期选举前难以介入，且即将到来的公开募股长期财务不确定性需要更多清晰度。这两者被视为基金在2027年重新加仓前的最后障碍。</p>
+<p><strong>下调Cirrus Logic（CRUS）至减持，目标价降至95美元：</strong>CY27年无新内容增长，苹果（AAPL）单元环境疲软，以及新年可能对苹果供应链的定价压力，构成困难前景。公司对SYNA的竞争性竞购进一步强化了公司感到需要积极多元化的观点。Edge IoT牛市情景对每股收益上行有限，即使加入Face ID插槽和新相机控制器，CY28 EPS为9.05美元，当前股价约12倍。</p>
+<p><strong>HDD行业前景积极，上调ASP和EPS预测：</strong>HDD板块近期回调提供有吸引力的切入点，STX和WDC保持双寡头格局，并致力于降低资本开支。预计CY26 ASP同比上涨42%，CY27同比上涨51%，高于此前预期。STX和WDC的CY27 EPS分别上调至58.31美元和29.88美元。报告偏好STX，因其HAMR技术带来定价权和潜在份额增长。</p>
+<p><strong>Analog板块估值回落，偏好TXN和ON：</strong>Analog板块估值自上次财报以来回落，资金轮动至Analog，该板块相对安全且无多年指引预期，且可能有更好的AI数据中心数字。TXN和ON是首选，TXN受益于汽车和工业需求，ON期望低，AI数据中心收入改善。</p>
+<p><strong>超大规模资本开支与SPV资金支持加速器收入增长：</strong>预计2028年总超大规模资本开支接近1.5万亿美元，加速器收入预计1.25万亿美元，SPV额外支出可达8250亿美元，总可用支出2.3万亿美元，高于基础预测，存在上行空间。AI使用案例积极，如METAMuse等，非超大规模企业也在增加投入。</p>
+<p><strong>半导体资本设备长期看好，短期门槛仍高：</strong>投资者关注2028年WFE数字约2650亿美元，多头看3000亿美元，但管理层在本次财报中不太可能提供明确指引。长期首选KLAC，因其在前端光刻/量测领域强度和市场防御性。</p>
+<p><strong>Handsets板块负面，CRUS最受影响：</strong>苹果近期报告指向新手机发布削减订单，Memory定价是最大逆风，并对利润率构成压力。CRUS受影响最大，同时SWKS面临类似利润压力但有合并抵消。</p>
+</article></main>
+<footer><div class="footer-inner">
+<span>美股研究专题 · 研究员观点笔记</span>
+<span>仅供研究参考，不构成投资建议</span>
+</div></footer>
+</body>
+</html>

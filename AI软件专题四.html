@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI软件专题（四） · 美股研究专题</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; background: #f4f6f8; color: #26303c; line-height: 1.8; }
+a { color: #2456a6; text-decoration: none; }
+header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e9ef; }
+.header-inner { max-width: 1000px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { font-size: 18px; font-weight: 700; color: #12233c; white-space: nowrap; }
+.brand a { color: inherit; }
+.brand .accent { color: #2456a6; }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { padding: 5px 12px; border-radius: 999px; font-size: 13.5px; color: #3d4a5c; }
+nav a:hover { background: #eef2f7; }
+nav a.active { background: #2456a6; color: #fff; }
+main { max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; }
+.card-page { background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 40px 44px; box-shadow: 0 1px 3px rgba(16,34,60,.05); }
+h1 { font-size: 28px; color: #12233c; margin-bottom: 8px; line-height: 1.35; }
+.meta { font-size: 13px; color: #7a8794; margin-bottom: 20px; }
+.divider { height: 3px; width: 64px; background: linear-gradient(90deg, #2456a6, #4f8bd9); border-radius: 2px; margin-bottom: 8px; }
+h2 { font-size: 19px; color: #12233c; margin: 2.2em 0 .8em; padding-left: 12px; border-left: 4px solid #2456a6; line-height: 1.4; }
+p { margin: 0 0 1em; font-size: 15.5px; }
+ul { margin: 0 0 1.2em; padding-left: 1.4em; }
+li { margin: .45em 0; font-size: 15.5px; }
+strong { color: #12233c; font-weight: 700; }
+footer { border-top: 1px solid #e5e9ef; background: #fff; }
+.footer-inner { max-width: 1000px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.hero { margin-bottom: 34px; }
+.hero h1 { font-size: 30px; }
+.hero p { color: #55616f; font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 10px; background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 24px; box-shadow: 0 1px 3px rgba(16,34,60,.05); transition: transform .15s ease, box-shadow .15s ease; color: inherit; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(16,34,60,.12); }
+.card h2 { font-size: 18px; border-left: none; padding-left: 0; margin: 0; }
+.card .blurb { font-size: 14px; color: #55616f; line-height: 1.7; flex: 1; }
+.tag { display: inline-block; background: #eef2f7; color: #3d4a5c; border-radius: 999px; padding: 2px 10px; font-size: 12px; margin: 0 6px 4px 0; }
+.card .more { font-size: 14px; font-weight: 600; color: #2456a6; }
+@media (max-width: 640px) { .card-page { padding: 26px 20px; } main { padding: 24px 14px 48px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<div class="brand"><a href="index.html">美股<span class="accent">研究专题</span></a></div>
+<nav><a href="index.html">首页</a>
+<a href="半导体专题一.html">半导体（一）</a>
+<a href="半导体专题二.html">半导体（二）</a>
+<a href="半导体专题三.html">半导体（三）</a>
+<a href="半导体专题四.html">半导体（四）</a>
+<a href="存储专题.html">存储</a>
+<a href="AI硬件专题一.html">AI硬件（一）</a>
+<a href="大模型专题一.html">大模型（一）</a>
+<a href="大模型专题二.html">大模型（二）</a>
+<a href="大模型专题三.html">大模型（三）</a>
+<a href="大模型专题四.html">大模型（四）</a>
+<a href="模型Agent.html">模型·Agent</a>
+<a href="AI软件专题一.html">AI软件（一）</a>
+<a href="AI软件专题二.html">AI软件（二）</a>
+<a href="AI软件专题三.html">AI软件（三）</a>
+<a href="AI软件专题四.html" class="active">AI软件（四）</a>
+<a href="数据中心专题一.html">数据中心（一）</a>
+<a href="数据中心专题二.html">数据中心（二）</a>
+<a href="网络安全专题.html">网络安全</a>
+<a href="中期选举专题一.html">中期选举（一）</a>
+<a href="中期选举专题二.html">中期选举（二）</a>
+<a href="资本开支专题一.html">资本开支（一）</a>
+<a href="资本开支专题二.html">资本开支（二）</a></nav>
+</div></header>
+<main><article class="card-page">
+<h1>AI软件专题（四）</h1>
+<p class="meta">来源：美股-AI软件专题（四）.md · 生成日期 2026-11-03</p>
+<div class="divider"></div>
+<h2>BofA研究员 Tal Liani：</h2>
+<ul><li><strong>微软（MSFT）：</strong>买入。理由：凭借Ofice、Teams等广泛分发渠道和模型无关的Copilot战略，自然成为新AI接口的拥有者；目标价$600。</li><li><strong>Salesforce （CRM）：</strong>买入。理由：采取务实的对冲策略，既通过Slack争取接口，又向外部AI开放数据，确保核心价值不被稀释；目标价$285。</li><li><strong>ServiceNow （NOW）：</strong>中性。理由：作为工作流编排层具有战略价值，且通过收购加强安全治理，但当前估值溢价较高，存在回调风险；目标价$150。</li><li><strong>Workday（WDAY）：</strong>中性。理由：虽在增强接口能力，但用户交互频率低，证明额外AI接口支出的ROI难度较大，面临激烈竞争；目标价$205。</li></ul>
+<p><strong>AI 3.0时代，接口层成为价值accrual的关键，传统软件厂商面临被架空风险：</strong>AI正在改变人类与软件的交互方式。如果AI 1.0是模型，AI 2.0是智能体（Agent），那么AI 3.0则是接口。这一转变导致用户、应用程序和软件栈之间的关系发生实质性变化。历史上，企业软件供应商拥有从应用、底层数据到业务逻辑和用户界面的每一层体验。然而，代理式AI（Agentic AI）开始将这些层级disaggregate（分离），引发一个重要问题：如果接口逐渐迁移到AI驱动的助手，价值将流向何处？虽然应用供应商仍受益于深厚的客户粘性、专有数据、工作流和业务逻辑，但如果用户越来越多地通过外部AI接口进行交互，领先的AI实验室可能会逐渐向下渗透并开发竞争性的应用层，从而对传统软件公司构成长期风险。</p>
+<p><strong>中间件层需求激增，软件厂商竞相提供编排能力以整合AI组件：</strong>AI的部署创造了对中间件层的需求，该层负责整合AI产品的各个组件：从多个来源收集和整理数据、应用治理和控制、跨IT、HR和CRM等功能连接系统，并通过Copilot、Slack、ChatGPT或Claude等接口暴露这些能力。鉴于目前处于早期阶段，软件供应商正试图自行提供这种编排服务。例如，Salesforce通过Informatica和Data360加强了其数据地位，扩展了代理能力，并通过Slack和Claude提供接口。微软也凭借其生产力生态系统，将Copilot打造为企业所有工作的起点，从而有望拥有交互层。</p>
+<p><strong>成本效率与统一架构将成为决定厂商能否捕获增量AI支出的关键：</strong>AI部署的经济性是另一个重要考量因素。软件供应商拥有数据及其上下文，因此可能更高效地部署AI。通过第三方AI平台访问企业数据可能需要额外的提取、处理和摄入成本，而软件供应商可以在其已管理的数据和工作流附近部：署更小的、特定任务的模型，从而减少令牌消耗和基础设施成本。我们认为，成本效率以及将数据、应用、代理、接口和安全集成到统一架构中的能力，对于确定哪些供应商能够捕获增量AI支出并应对去中介化风险至关重要。</p>
+<p><strong>微软凭借广泛的覆盖面和模型无关策略，自然成为新接口的拥有者：</strong>微软被认为处于有利地位，能够拥有新的AI接口，因为它已经拥有了知识工作发生的许多表面。微软的Copilot使这一战略日益明确：Home成为工作的起点，结合了Chat和Cowork，而Word、Excel和PowerPoint直接融入Copilot。Cowork旨在端到端执行委托工作，Code允许用户通过自然语言构建应用和工作流，Autopilot则进一步扩展模型，提供持续工作的持久代理。重要的是，微软并未将其接口押注于单一模型，其订阅包括模型选择，而“Auto”功能可以将请求路由到最适合给定任务的模型。微软通过Office、Teams、Outlook和Windows拥有分发渠道，而Microsoft IQ作为智能层，为Copilot提供了基于组织数据、上下文和权限的企业背景及治理。</p>
+<p><strong>Salesforce采取“两头下注”策略，既通过Slack争取接口所有权，又向外部AI开放数据：</strong>Salesforce可能是追求双方策略的最清晰例子。一方面，Slackforce让Salesforce有机会通过建立Slack作为工作的对话式前门来拥有用户交互。另一方面，Alforce和Claudeforce认识到，Salesforce不一定需要拥有接口才能保持价值：Salesforce使其数据、工作流、业务逻辑、操作和治理可以直接从Claude访问，操作继续通过Salesforce现有的权限和业务规则运行。Salesforce将此描述为从“软件即接口”向“软件驱动每个接口”的转变。虽然向第三方AI接口开放可能会稀释Salesforce自己的UI，并使Claude等平台更多地拥有用户参与度和分发权，但这被视为一种务实的对冲策略。</p>
+<p><strong>ServiceNow的核心价值在于工作流编排，未必需要拥有UI，但正加强安全与治理差异化：</strong>ServiceNow可能是测试拥有UI是否必要的最有趣案例。其战略价值历来较少依赖于特定屏幕，而更多在于跨企业系统编排工作流，这使ServiceNow自然地成为员工选择的任何接口下方的行动系统。这意味着，只要ServiceNow继续拥有受治理的工作流和执行层，即使Claude、ChatGPT、Copilot或其他接口位于其上，它也可能保持越来越高的相关性。尽管如此，该公司收购了Moveworks以加强其对话式AI和企业搜索能力，为其成为员工互动的起点提供了另一条路径。此外，随着代理在企业中扩散，安全和治理成为日益重要的差异化因素。ServiceNow已将AI Control Tower展为企业指挥中心，涵盖发现、可观察性、治理、安全和跨第三方环境的AI测量，并通过收购Armis和Veza进一步扩大了这一地位。</p>
+<p><strong>Workday面临较低的替代风险，但在保留UI方面难度较大，需证明额外支出的ROI：</strong>Workday正刻意推动在接口层面保持相关性，收购Sana提供了跨Workday和第三方应用的对话体验，并提供可在HR、财务和其他系统中搜索企业知识和执行工作流的代理。同时，Workday通过MCP开放其底层平台，允许第三方代理安全访问和处理Workday数据，同时保留Workday的权限和治理。更大的问题是客户是否愿意为Workday拥有该接口支付额外费用。在I预算受限的情况下，增量AI支出需要展示明确的ROI，相对于与知识工作者生产力（MSFT）、创收工作流（CRM）或T/服务自动化（NOW）相关的AI，Workday面临的证明负担更高。Workday相对较低的最终用户交互频率，加上从第三方AI接口访问其底层数据和操作的能力，可能使得在微软和AI实验室争夺同一钱包时，更难证明在Workday自有AI接口上的增量支出是合理的。</p>
+<h2>BofA研究员 Victor Cheng：</h2>
+<ul><li><strong>SAP：</strong>买入，目标价€226。关键任务ERP，高转换成本，AI嵌入交易流程，商业进展显著。</li><li><strong>Autodesk：</strong>买入，目标价$300。AEC软件竞争地位强，AI采用缓慢，但席位模式有风险。</li><li><strong>Nemetschek：</strong>买入，目标价€93。AEC领域转换成本高，AI为增强而非替代。</li><li><strong>Dassault Systemes：</strong>中性，目标价€25.6。数字记录护城河强，但席位定价易受AI冲击。</li><li><strong>Amadeus：</strong>跑输，目标价€53。个人AI代理可能重塑旅行分销，航空分销受冲击较大。</li><li><strong>Sabre：</strong>买入，目标价$2.5。相对航空IT影响较小，但风险较高。</li><li><strong>HBX Group：</strong>买入，目标价12。酒店分销受AI冲击小于航空。</li><li><strong>Twilio：</strong>买入，目标价$320。代理驱动通信量长期增长。</li><li><strong>Sinch：</strong>跑输，目标价SEK29。代理通信带来增长但面临竞争压力。</li><li><strong>Bandwidth：</strong>中性，目标价$60。AI语音机会，但执行风险。</li><li><strong>Snowflake：</strong>买入，目标价$470。AI强化数据平台价值。</li><li><strong>MongoDB：</strong>买入，目标价$540。AI强化数据库重要性。</li><li><strong>Datadog：</strong>买入，目标价$305。AI带来复杂工作负载，观测需求增长。</li><li><strong>Dynatrace：</strong>买入，目标价$65。类别领导地位。</li><li><strong>Elastic：</strong>中性，目标价$108。AI搜索机会，执行风险。</li><li><strong>JFrog：</strong>买入，目标价$110。AI改变开发生命周期，软件供应链安全更关键。</li><li><strong>GitLab：</strong>中性，目标价$54。DevOps平台战略地位，竞争激烈。</li><li><strong>UiPath：</strong>跑输，目标价$15。确定性RPA面临AI代理替代风险。</li><li><strong>Temenos：</strong>买入，目标价CHF97。银行核心系统高转换成本，替代有限。</li><li><strong>Planisware：</strong>买入，目标价€31。统一平台加速AI交付，复杂集成难替代，但席位定价风险。</li><li><strong>TeamViewer：</strong>买入，目标价€9.5。重新定位数字工作场所平台，但AI可能侵蚀低端。</li></ul>
+<p><strong>软件商品化观点被夸大，软件供应商仍是技术栈中持久且关键的部分：</strong>尽管前沿模型和代理式编码进展迅速，但市场普遍存在的“人人可以构建软件”的预期远超现实。AI已显著降低原型开发成本，然而许多演示未能体现规模化、可靠性、安全性、系统集成以及持续维护等方面的巨大挑战。代理式AI可以生成代码并加速开发，但仍高度依赖现有软件工具、资深工程师和清晰的产品方向。缺少这些基础，AI代理往往只能产出低质量的克隆产品或复制既有方案，而非真正差异化的产品。因此，编码远未“解决”，软件企业将适应并继续在将原始模型输出转化为企业级可靠、可审计、安全且成本高效的产品方面发挥关键作用。</p>
+<p><strong>软件护城河正在演变而非消失：</strong>代理式AI将削弱部分软件护城河，同时强化另些。标准化的工作流程、UI/UX设计以及界面交互的重要性趋于下降，因为代理可以通过API而非用户界面与应用程序交互，使熟悉或精美的用户界面变得不那么重要。然而，可信的业务数据、嵌入的行业知识、对AI行为的控制能力、成熟的合作伙伴网络以及定制化部署能力将保持或增强其防御价值。真正的网络效应也可能随着更多客户和合作伙伴贡献数据和洞察而加强。在代理式AI深入企业工作流时，它更依赖于经过验证的软件、业务规则和记录系统，因此竞争优势正转向那些难以通过复制代码本身获得的能力。</p>
+<p><strong>定价模式从基于席位向基于消费或结果转变，但过渡仍不确定：</strong>投资者普遍担忧，基于席位的订阅模式可能无法在AI代理时代生存，因为代理可以在不增加用户数量的情况下完成更多工作。软件供应商通常以消费型或结果导向型定价作为回应，例如按令牌、行动或成果收费。然而，快速变化的能力、令牌效率以及客户期望使得定价模式仍处于实验阶段，客户抗拒可能延缓从订阅模式转型。如果不出现更清晰的证据表明软件供应商能成功转型定价并货币化AI使用，这一担忧短期内不会消退，将继续压制软件板块情绪。</p>
+<p><strong>企业软件支出仍将保持健康增长，AI重新分配而非消灭需求：</strong>Gartner预测，2025-2030年应用软件支出年复合增长率达13.2%，即使考虑跨职能代理应用的替代效应，传统功能孤岛市场的增长率仍将保持在10.9%。累计将有1160亿美元支出从传统功能类别转向跨职能代理应用，但总体软件支出并未消失。大型供应商若能同时提供核心应用和跨企业编排，可重新捕获转移的支出，因此增长更接近替代前市场水平；而局限于单一功能的窄众供应商面临更大风险。</p>
+<p><strong>AI收入披露不一致，真实贡献被低估：</strong>软件行业的AI收入披露仍不统一，美国供应商普遍比欧洲同行更成熟。当前披露显示AI一般占集团收入的低至中个位数百分比，范围大致在1%-11%之间。但报告认为，披露数字低估了真实贡献，因为AI货币化常被嵌入捆绑方案或通过更广泛的价格上涨体现。提供中期目标的公司预期AI占比将达5%-30%。</p>
+<h2>Jefferies研究员 Teddy Farley：</h2>
+<ul><li><strong>ServiceNow（NOW）：</strong>买入评级，目标价$140。理由：招聘纪律严明，销售岗位增长预示预订量提升，运营效率改善。</li><li><strong>Shopify（SHOP）：</strong>买入评级。理由：消费者流量强劲支持GMV增长，商家参与度改善，销售招聘增加。</li><li><strong>Toast（TOST）：</strong>买入评级。理由：订单和登录流量加速，销售招聘优先，GTM执行有力。</li><li><strong>HubSpot（HUBS）：</strong>买入评级，目标价$250。理由：平台流量创多年新高，用户参与度高，尽管移动端疲软但整体基本面稳健。</li><li><strong>Twilio（TWLO）：</strong>买入评级。理由：流量增长虽放缓但仍稳健，招聘纪律良好，长期增长逻辑未变。</li></ul>
+</article></main>
+<footer><div class="footer-inner">
+<span>美股研究专题 · 研究员观点笔记</span>
+<span>仅供研究参考，不构成投资建议</span>
+</div></footer>
+</body>
+</html>

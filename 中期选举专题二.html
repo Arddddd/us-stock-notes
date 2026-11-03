@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中期选举专题（二） · 美股研究专题</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; background: #f4f6f8; color: #26303c; line-height: 1.8; }
+a { color: #2456a6; text-decoration: none; }
+header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e9ef; }
+.header-inner { max-width: 1000px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { font-size: 18px; font-weight: 700; color: #12233c; white-space: nowrap; }
+.brand a { color: inherit; }
+.brand .accent { color: #2456a6; }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { padding: 5px 12px; border-radius: 999px; font-size: 13.5px; color: #3d4a5c; }
+nav a:hover { background: #eef2f7; }
+nav a.active { background: #2456a6; color: #fff; }
+main { max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; }
+.card-page { background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 40px 44px; box-shadow: 0 1px 3px rgba(16,34,60,.05); }
+h1 { font-size: 28px; color: #12233c; margin-bottom: 8px; line-height: 1.35; }
+.meta { font-size: 13px; color: #7a8794; margin-bottom: 20px; }
+.divider { height: 3px; width: 64px; background: linear-gradient(90deg, #2456a6, #4f8bd9); border-radius: 2px; margin-bottom: 8px; }
+h2 { font-size: 19px; color: #12233c; margin: 2.2em 0 .8em; padding-left: 12px; border-left: 4px solid #2456a6; line-height: 1.4; }
+p { margin: 0 0 1em; font-size: 15.5px; }
+ul { margin: 0 0 1.2em; padding-left: 1.4em; }
+li { margin: .45em 0; font-size: 15.5px; }
+strong { color: #12233c; font-weight: 700; }
+footer { border-top: 1px solid #e5e9ef; background: #fff; }
+.footer-inner { max-width: 1000px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.hero { margin-bottom: 34px; }
+.hero h1 { font-size: 30px; }
+.hero p { color: #55616f; font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 10px; background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 24px; box-shadow: 0 1px 3px rgba(16,34,60,.05); transition: transform .15s ease, box-shadow .15s ease; color: inherit; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(16,34,60,.12); }
+.card h2 { font-size: 18px; border-left: none; padding-left: 0; margin: 0; }
+.card .blurb { font-size: 14px; color: #55616f; line-height: 1.7; flex: 1; }
+.tag { display: inline-block; background: #eef2f7; color: #3d4a5c; border-radius: 999px; padding: 2px 10px; font-size: 12px; margin: 0 6px 4px 0; }
+.card .more { font-size: 14px; font-weight: 600; color: #2456a6; }
+@media (max-width: 640px) { .card-page { padding: 26px 20px; } main { padding: 24px 14px 48px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<div class="brand"><a href="index.html">美股<span class="accent">研究专题</span></a></div>
+<nav><a href="index.html">首页</a>
+<a href="半导体专题一.html">半导体（一）</a>
+<a href="半导体专题二.html">半导体（二）</a>
+<a href="半导体专题三.html">半导体（三）</a>
+<a href="半导体专题四.html">半导体（四）</a>
+<a href="存储专题.html">存储</a>
+<a href="AI硬件专题一.html">AI硬件（一）</a>
+<a href="大模型专题一.html">大模型（一）</a>
+<a href="大模型专题二.html">大模型（二）</a>
+<a href="大模型专题三.html">大模型（三）</a>
+<a href="大模型专题四.html">大模型（四）</a>
+<a href="模型Agent.html">模型·Agent</a>
+<a href="AI软件专题一.html">AI软件（一）</a>
+<a href="AI软件专题二.html">AI软件（二）</a>
+<a href="AI软件专题三.html">AI软件（三）</a>
+<a href="AI软件专题四.html">AI软件（四）</a>
+<a href="数据中心专题一.html">数据中心（一）</a>
+<a href="数据中心专题二.html">数据中心（二）</a>
+<a href="网络安全专题.html">网络安全</a>
+<a href="中期选举专题一.html">中期选举（一）</a>
+<a href="中期选举专题二.html" class="active">中期选举（二）</a>
+<a href="资本开支专题一.html">资本开支（一）</a>
+<a href="资本开支专题二.html">资本开支（二）</a></nav>
+</div></header>
+<main><article class="card-page">
+<h1>中期选举专题（二）</h1>
+<p class="meta">来源：美股-中期选举专题（二）.md · 生成日期 2026-11-03</p>
+<div class="divider"></div>
+<h2>Citi研究员 Scott T Chronert：</h2>
+<ul><li><strong>美国医疗保健板块：相对看好。</strong>逻辑是民主党控制众议院后可能增加医疗保健支出，部分逆转预算削减；该相对交易已大部分兑现。</li><li><strong>美国金融/银行板块：相对回避。</strong>若共和党意外保住参议院，金融股可能短期反弹，因为参议院委员会可影响监管情绪并掌握美联储主席任命批准权。</li></ul>
+<p><strong>民主党全面胜利的概率最高，且自9月初以来持续上行，这一预期大部分已反映在当前美股情绪中：</strong>后续需考虑两种可能，一是共和党在关键州表现超预期并保住参议院，因多个州民调仍在误差范围内；二是民主党取得53个以上参议院席位。前一种情景可能为美股提供年底顺风，后一种可能引发市场对2028年大选后企业加税的担忧，给估值带来压力。</p>
+<p><strong>众议院翻盘几乎没有悬念，但民主党席位增幅对2028年意义重大：</strong>众议院被假设将翻盘给民主党，市场对此已有充分预期，因为执政党通常在中期选举丢失众议院席位，而共和党目前仅占微弱多数。花旗强调真正重要的是民主党能拿下多少额外席位：若仅以微弱多数取胜，民主党议员必须在未来两年按党派路线投票；若取得较大多数，部分议员可依据选区利益在某些议题上偏离党派路线，这有助于在2028年保住席位。换言之，中期选举中民主党在众议院的席位增幅越大，2028年民主党全面胜利的概率边际越高。</p>
+<p><strong>参议院控制权是核心变量，共和党守住或触发反弹，民主党53席以上或增加压力：</strong>特朗普当前净支持率为-21.7%，处于过去20年总统进入中期选举前的低位；普遍选票民调中民主党领先8.1个百分点，与2006年布什时期最为相似。但参议院多个关键州民调仍在误差范围内。预测市场近期偏向民主党，尤其是在提前投票数据开始公布后。花旗认为，若共和党意外保住参议院，可能为年底前美股带来战术性反弹；若民主党取得53席以上，市场需要开始为2027年预算、债务上限、赤字融资和税率议题做准备。</p>
+<p><strong>州长和地方选举可能对数据中心建设造成边际制约：</strong>德州州长阿博特民调持续领先，但同州参议员帕克斯顿的民调较差，分裂投票风险使得州对民主党来说变得可争取。俄亥俄州拉马斯瓦米近期民调下滑，可能增加俄亥俄州参议院席位归属民主党的概率。预测市场显示民主党至少将在若干州长选举中有所斩获。花旗预计地方层面的区划和许可审批将出现更多障碍，边际上约束新增算力投产，但净影响是供给路径被拉长而非总量取消；同时，市场对基础设施建设融资压力的担忧将有所缓解。</p>
+<p><strong>中期选举对基本面的直接影响有限，更需关注政策预期引发的情绪波动：</strong>花旗此前建议的多医疗保健、空金融/银行组合已大部分兑现。若共和党保住参议院，金融股可能反弹；若民主党翻盘众议院，医疗保健支出增加的窗口将打开。若民主党在众议院取得235席以上、参议院取得53席以上，市场可能更认真计入2028年企业税率上调与民主党全面胜利风险。</p>
+<h2>MS研究员 Serena Tang：</h2>
+<ul><li><strong>半导体行业：</strong>看好，历史显示中期选举后12个月超额收益39.5%，当前回撤充分，市场宽度极端，具备反弹潜力。</li><li><strong>软件行业：</strong>看好，中期选举后12个月超额收益17.4%，受益于科技周期复苏。</li><li><strong>日元：</strong>看多，在民主党微弱多数导致政府分裂和增长担忧的情景下，日元有望走强。</li><li><strong>瑞士法郎：</strong>看多，同样受益于避险需求和美元走弱预期。</li></ul>
+<p><strong>美国公共政策：关税和行政命令在任何选举结果下都将继续，中期选举主要影响财政政策：</strong>无论2026年中期选举结果如何，现有的关税政策和总统行政命令都大概率保持不变。中期选举的主要分歧体现在财政政策的推进节奏上，包括补充营养援助计划（SNAP）和医疗补助（Medicaid）的削减时机、国防开支、政府停摆和债务上限风险。此外，数据中心建设的决策权在各州政府，因此州长和公用事业委员会的选举（如德克萨斯州、俄亥俄州、宾夕法尼亚州、佐治亚州以及佐治亚州公共服务委员会、亚利桑那州公司委员会）比参议院选举对相关行业影响更大。</p>
+<p><strong>美国与全球经济：美国经济展望几乎不受选举结果影响，民主党全面控制国会可能小幅提升2027年GDP：</strong>美国经济前景基本稳定，选举结果只会带来边际变化。如果民主党获得一致多数，可能会为2027年GDP增加零点几个百分点；而如果民主党仅获得脆弱多数，则增加政府停摆风险。美国以外的关税风险主要集中在美墨加协定（USMCA）和巴西，但基线情景下关税引发的通胀压力预计在2027年上半年逐渐缓解。</p>
+<p><strong>美国银行业：民主党获胜可能减缓放松监管的进程，但不会逆转趋势：</strong>若民主党在中期选举中获胜，银行监管放松的速度可能放慢，但大方向不会改变。银行并购活动预计在2027-2028年逐步增加，受益于审批加速和资本规则放宽。买方可能提前行动，利用政策窗口期。</p>
+<p><strong>美国固定收益：共和党全面获胜是美债供给的主要上行风险并推高美元；民主党多数利好短端，而分裂政府可能压低长端收益率并支持日元和瑞郎：</strong>若共和党大获全胜，市场对国债供给增加的担忧将上升，并推动美元走强。若民主党获得致多数，市场焦点将转向收益率曲线前端和2027年债务上限问题。若民主党仅获得微弱多数，政府分裂和增长担忧可能加剧，导致长端收益率下行，同时利好日元和瑞士法郎。信用债市场预计能够吸收创纪录的发行量，但利差可能小幅走阔。</p>
+<p><strong>美国股票：商业周期比中期选举更重要；盈利增长强劲但增速放缓，中期选举后股市通常上涨，半导体和软件板块领涨：</strong>驱动股市的核心因素仍是商业周期而非政治事件。当前企业盈利增长依然强劲，但增长率（增速）正在下降。历史数据显示，中期选举后股市往往出现反弹，其中半导体和软件行业表现最为突出。市场宽度指标显示，本轮中期周期调整已接近尾声，中期选举是完成调整所需的三个催化剂事件之一。</p>
+<h2>GS研究员 Alec Phillips：</h2>
+<p><strong>民主党很可能赢得众议院多数：</strong>预测市场暗示民主党赢得众议院多数席位的概率超过90%，全国情绪自2024年大选以来向民主党倾斜约10-11个百分点。通用投票民调显示民主党在全国领先约9个百分点，而2024年大选中共和党在全国众议院普选中领先2.6个百分点，这意味着摆动超过11个百分点。在33个有非党派民调的选区中，当前差距与2024年总统投票在该选区的差距平均为11个百分点，与通用投票的摆动相似，但各选区之间存在显著差异，部分选区摆动不足1个百分点，而有些选区摆动接近25个百分点。选民热情度指标和初选参与情况也指向类似规模的民主党优势。共和党在特朗普总统上次选举中赢下不足11个百分点的选区中拥有近30个席位，民主党只需净增3席即可赢得多数，预测市场暗示民主党将净增21席，总席位达236席，类似于2018年中期选举后的多数席位规模，比2021年以来执政党仅略高于220席的微弱多数更宽裕。</p>
+<p><strong>参议院结果不确定，但重要性可能较低：</strong>预测市场暗示民主党赢得参议院多数的概率超过65%，但近期参议院民调历史表明竞争可能更接近。自2002年以来，在竞争激烈选区中民调领先2.5个百分点或以下的参议员候选人最终获胜的概率仅为60%。中期选举民调误差变得更加极化，共和党候选人在共和党倾向州的表现往往优于选前民调，民主党候选人在民主党倾向州的表现优于民调。民主党赢得多数需要赢下特朗普在2024年以11-16个百分点赢下的州（如阿拉斯加、俄亥俄、德克萨斯等），而自2002年以来，共和党参议员候选人在此类共和党倾向州的最终表现平均比选前民调高出3个百分点。尽管如此，参议院结果对政策前景的重要性可能较低，因为大多数立法需要60票才能通过，且总统特朗普可以否决任何国会通过的法案。不过，参议院单独负责确认总统提名人选，民主党参议院可以阻止总统的人事任命，但总统可通过任命“代理”官员填补部分职位，但无法填补美联储或法院等独立机构的空缺。</p>
+<p><strong>财政截止日期将变得更加重要：</strong>由于两党支持是任何立法通过的必要条件，控制一个或两个议院的民主党将主要能够阻止共和党倡议，而不是推动自己的议程。特朗普政府的关键举措主要依赖行政行动而非立法，因此中期选举结果的影响可能小于以往。然而，民主党多数可以利用强制事件，如支出授权到期（可能导致政府关门）或债务上限截止日期（可能导致借款能力中断），来争取政策让步。下一个相关截止日期是12月11日，支出授权到期，但国会不太可能在跛脚鸭会议期间达成全年支出协议，更可能将截止日期推迟至2027年2月或3月。债务上限可能在2027年第一季度达到，财政部可能通过消耗其在美联储的余额和其他“非常措施”管理到2027年10月，届时国会必须提高债务上限。共和党可能试图在年底前提高债务上限，但众议院微弱多数和财政保守派的反对使这一前景不太可能成功。</p>
+<p><strong>财政政策影响有限，但倾向于增加支出：</strong>在2026年财政刺激之后，2027年的财政脉冲大致中性。尽管分裂政府通常导致财政政策扩张性较弱，但在民主党控制下支出可能略有增加。民主党提议逆转去年财政方案中的支出削减，估计将在2027年增加相当于GDP的0.25%（约85亿美元）。其中大部分削减落在医疗补助（2027年减少550亿美元）和营养计划（减少180亿美元）。恢复ACA医疗保险补贴也是民主党的明确优先事项，若按去年的提案，每年将增加约500亿美元支出。民主党可能将支出授权延期或债务上限提高与逆转部分削减挂钩。此外，两党若能达成“双赢”支出协议，将提高国防和非国防支出，但增幅不太可能超过GDP的零点几个百分点。</p>
+<p><strong>关税政策：民主党选择性取消，但总统可能广泛提高关税：</strong>民主党领导人表示，如果赢得多数，将试图取消特朗普政府实施的部分关税，最可能针对从加拿大进口的商品。然而，高盛预计选举后总统将发布Section301工业产能过剩调查结果，并可能恢复对个别贸易伙伴的关税税率至最高法院裁决前的水平，但额外豁免将导致有效关税率略低于年初水平。预计这些措施将使美国有效关税率上升略低于2个百分点。</p>
+<p><strong>AI与数据中心监管：可能出现两党妥协，但严格监管不可能：</strong>由于经济重要性和前沿实验室自身强调的风险，下一届国会通过AI监管立法的可能性较高。但中期选举结果不太可能实质性改变该问题的前景。在数据中心的州和地方层面，几位民主党州长候选人提出了比共和党对手更严格的限制，包括州级暂停（如德克萨斯、佛罗里达、佐治亚、密歇根），环境立法和税收激励限制。潜在民主党在亚利桑那、宾夕法尼亚、内华达的全面控制可能导致新的AI法律。但在联邦层面，民主党赢得一个或两个议院不太可能产生全面的新监管，因为参议院通过需60票，推翻否决需两院三分之二多数。特朗普政府继续支持行业主导、不干预的做法，大多数共和党人反对严格监管。两党AI协议可能集中在某种形式的自主测试和自我监管，仅对AI公司施加适度负担。严格提议如独立外部评估或AI财富基金不太可能获得两党支持。</p>
+</article></main>
+<footer><div class="footer-inner">
+<span>美股研究专题 · 研究员观点笔记</span>
+<span>仅供研究参考，不构成投资建议</span>
+</div></footer>
+</body>
+</html>

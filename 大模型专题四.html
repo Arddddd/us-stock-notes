@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大模型专题（四） · 美股研究专题</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif; background: #f4f6f8; color: #26303c; line-height: 1.8; }
+a { color: #2456a6; text-decoration: none; }
+header { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid #e5e9ef; }
+.header-inner { max-width: 1000px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.brand { font-size: 18px; font-weight: 700; color: #12233c; white-space: nowrap; }
+.brand a { color: inherit; }
+.brand .accent { color: #2456a6; }
+nav { display: flex; gap: 6px; flex-wrap: wrap; }
+nav a { padding: 5px 12px; border-radius: 999px; font-size: 13.5px; color: #3d4a5c; }
+nav a:hover { background: #eef2f7; }
+nav a.active { background: #2456a6; color: #fff; }
+main { max-width: 1000px; margin: 0 auto; padding: 40px 24px 64px; }
+.card-page { background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 40px 44px; box-shadow: 0 1px 3px rgba(16,34,60,.05); }
+h1 { font-size: 28px; color: #12233c; margin-bottom: 8px; line-height: 1.35; }
+.meta { font-size: 13px; color: #7a8794; margin-bottom: 20px; }
+.divider { height: 3px; width: 64px; background: linear-gradient(90deg, #2456a6, #4f8bd9); border-radius: 2px; margin-bottom: 8px; }
+h2 { font-size: 19px; color: #12233c; margin: 2.2em 0 .8em; padding-left: 12px; border-left: 4px solid #2456a6; line-height: 1.4; }
+p { margin: 0 0 1em; font-size: 15.5px; }
+ul { margin: 0 0 1.2em; padding-left: 1.4em; }
+li { margin: .45em 0; font-size: 15.5px; }
+strong { color: #12233c; font-weight: 700; }
+footer { border-top: 1px solid #e5e9ef; background: #fff; }
+.footer-inner { max-width: 1000px; margin: 0 auto; padding: 18px 24px; font-size: 12.5px; color: #8a95a2; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.hero { margin-bottom: 34px; }
+.hero h1 { font-size: 30px; }
+.hero p { color: #55616f; font-size: 15px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 10px; background: #fff; border: 1px solid #e5e9ef; border-radius: 14px; padding: 24px; box-shadow: 0 1px 3px rgba(16,34,60,.05); transition: transform .15s ease, box-shadow .15s ease; color: inherit; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(16,34,60,.12); }
+.card h2 { font-size: 18px; border-left: none; padding-left: 0; margin: 0; }
+.card .blurb { font-size: 14px; color: #55616f; line-height: 1.7; flex: 1; }
+.tag { display: inline-block; background: #eef2f7; color: #3d4a5c; border-radius: 999px; padding: 2px 10px; font-size: 12px; margin: 0 6px 4px 0; }
+.card .more { font-size: 14px; font-weight: 600; color: #2456a6; }
+@media (max-width: 640px) { .card-page { padding: 26px 20px; } main { padding: 24px 14px 48px; } h1 { font-size: 24px; } }
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<div class="brand"><a href="index.html">美股<span class="accent">研究专题</span></a></div>
+<nav><a href="index.html">首页</a>
+<a href="半导体专题一.html">半导体（一）</a>
+<a href="半导体专题二.html">半导体（二）</a>
+<a href="半导体专题三.html">半导体（三）</a>
+<a href="半导体专题四.html">半导体（四）</a>
+<a href="存储专题.html">存储</a>
+<a href="AI硬件专题一.html">AI硬件（一）</a>
+<a href="大模型专题一.html">大模型（一）</a>
+<a href="大模型专题二.html">大模型（二）</a>
+<a href="大模型专题三.html">大模型（三）</a>
+<a href="大模型专题四.html" class="active">大模型（四）</a>
+<a href="模型Agent.html">模型·Agent</a>
+<a href="AI软件专题一.html">AI软件（一）</a>
+<a href="AI软件专题二.html">AI软件（二）</a>
+<a href="AI软件专题三.html">AI软件（三）</a>
+<a href="AI软件专题四.html">AI软件（四）</a>
+<a href="数据中心专题一.html">数据中心（一）</a>
+<a href="数据中心专题二.html">数据中心（二）</a>
+<a href="网络安全专题.html">网络安全</a>
+<a href="中期选举专题一.html">中期选举（一）</a>
+<a href="中期选举专题二.html">中期选举（二）</a>
+<a href="资本开支专题一.html">资本开支（一）</a>
+<a href="资本开支专题二.html">资本开支（二）</a></nav>
+</div></header>
+<main><article class="card-page">
+<h1>大模型专题（四）</h1>
+<p class="meta">来源：美股-大模型专题（四）.md · 生成日期 2026-11-03</p>
+<div class="divider"></div>
+<h2>Citi研究员 Brian Gong：</h2>
+<p><strong>谷歌DeepMind发布Genie 4，交互式世界模型在真实感和实时交互模拟方面取得显著进展：</strong>Genie 4整合了Gemini Omni，能够以真实世界的外观和行为进行模拟，并由其他Gemini模型提供复杂推理，以保持模拟的连贯性和连续性。与上一代相比，Genie 4在四个方面取得进展：实时塑造世界模拟、在物理和人类动作的真实感方面推进前沿、首个实时生成原生音频的模型、使用Gemini 3.8 Flash模拟复杂事件。这些进展表明交互式世界模型正在快速发展。</p>
+<p><strong>中国AI视频模型主要参与者应探索交互式世界模型：</strong>作者认为，中国领先的AI视频模型公司也应该通过其AI视频模型探索交互式世界模型。字节跳动的Seed团队将视频生成模型视为通往世界模型的关键路径之一，其领先的Seedance模型与基础模型能力相结合，可能使字节跳动在该领域获得优势。快手也可能通过其Kling AI探索世界模型机遇，但其基础模型能力有限可能成为制约。</p>
+<p><strong>交互式世界模型仍处于早期阶段，但将成为视频生成模型的重要方向：</strong>尽管世界模型在创意指导、沉浸式摄影、机器人模拟和互动娱乐（尤其是在线游戏）等领域具有应用潜力，但仍存在长时程连贯性、编辑困难、高计算成本、复杂物理交互理解以及实时空间和音频精度等限制。世界模型应成为视频生成模型的重要发展方向，从当前的小程序剧、视频广告、长剧和电影等应用场景进一步扩展。</p>
+<h2>Jefferies研究员 Edison Lee：</h2>
+<p><strong>谷歌Gemini 4 Carbon跃居全球AI模型智能榜首，显示单一实验室难以持续保持技术领先地位：</strong>谷歌的Gemini 4 Carbon昨日发布后，在ArtificialAnalysis的智能排名中从9月的第10位跃升至第1位。此前Meta的Muse Spark上个月已强势回归至第2位。杰富瑞认为，模型排名频繁变动表明：技术领导地位难以持续，AI模型之间的差异化正在缩小，而持续的智能竞争将推高资本开支，带来融资和投资回报压力。</p>
+<p><strong>中国模型竞争格局生变，月之暗面Kimi K3.1 Pro超越小米MiMo-v2.6 Pro成为中国第一：</strong>月之暗面于10月23日发布Kimi K3.1 Pro，在AA的新排名标准下，其排名从第5跃升至中国模型第1，全球第5；小米MiMo-v2.6 Pro因排名标准变更，从上月中国第1下滑至第5。同时，SpaceX AI的Grok 4.7（High）跌至全球第6。全球前四大模型仍为美国闭源模型。</p>
+<p><strong>美中模型性能差距扩大至23%，预计未来12个月可能进一步拉大，但中国AI应用商业化能力不受影响：</strong>美国与中国前沿模型的性能差距从上月的20%扩大至23%。杰富瑞认为，由于美国AI实验室在获取最先进GPU和HBM方面具有优势，该差距在未来12个月可能继续扩大。然而，这并不妨碍中国实现AI应用商业化和发展可持续生态系统。中国短期内扩大AI推理规模的主要瓶颈仍是算力和HBM。</p>
+<p><strong>谷歌保持token价格不变，体现高度竞争和争夺市场份额的意图：</strong>谷歌发布Gemini 4 Carbon时未提高token价格，尽管模型性能显著提升。此前10月13日发布Gemini 4 Argon时，谷歌曾将token价格上调155%。Gemini 4 Carbon的token价格目前仅排在前沿模型第5高，而每任务成本排在第3高。杰富瑞认为Gemini 4 Carbon极具竞争力，尤其是相对前两名美国闭源模型。</p>
+<h2>Jefferies研究员 Thomas Chong：</h2>
+<p><strong>中国大模型在智能水平上正迅速缩小与美国的差距，且具备极高的成本效益：</strong>根据Artificial Analysis数据，中美顶级模型的智能差距已缩小至2.7%。得益于混合专家（MoE）架构、线性注意力机制和模型FLOPs利用率（MFU）的优化，中国模型（如DeepSeek、Qwen、Kimi等）的API成本仅为美国模型的一小部分，展现出显著的性价比优势。</p>
+<p><strong>Token消耗总量环比小幅下降，但同比增长趋势强劲，中国模型消耗量首次超越美国：</strong>截至10月19日当周，OpenRouter数据显示总Token消耗量环比下降4.65%至164万亿，但同比保持快速增长。值得注意的是，在10月12日当周，中国模型的Token消耗量（79万亿）首次：超过美国模型（17.4万亿），其中DeepSeek V4.1 Flash以32.8万亿的消耗量位居榜首。</p>
+<p><strong>视频生成模型市场竞争加剧，MiniMax H3市场份额显著上升：</strong>随着MiniMaxH3模型的发布，其在视频生成市场的份额自7月底以来持续上升，凭借出色的性价比获得用户青睐。Kling 4.0的预期发布也被视为积极信号，其在时长、关键帧处理和分辨率上的提升有望推动其年度经常性收入（ARR）增长。</p>
+<p><strong>监管政策明确，鼓励开源与合作，限制范围精准有限：</strong>关于《禁止或限制出口技术目录》的修订草案，政府采取了精准有限的限制范围，并应用便利化措施。对于满足特定参数规模（如2T以上参数或10^26 FLOPs以上训练量）的受限模型，若用于开源、海外自建算力中心或芯片流片，将适用便利化措施。此外，轻量级本地客户端部署和外部API调用不属于出口管理范围。</p>
+<h2>Jefferies研究员 Thomas Chong：</h2>
+<p><strong>K3.1 Pro是K3的后训练版本，为3T级/开放权重模型，具备2.8T总参数和104B活跃参数，支持100万token上下文窗口，并同步推出速度提升2-3倍的高速版本：</strong>月之暗面在2026年7月发布K3后，于10月推出Kimi K3.1 Pro。该模型采用开放权重，总参数2.8T、活跃参数104B，上下文窗口达100万token。后训练计算规模显著扩大，支持在数百个下游领域进行大规模联合强化学习，并带来稳定可预测的回报。同时，月之暗面还发布了Kimi K3.1 Pro Highspeed,交互响应速度是K3.1 Pro的2-3倍，更适合需要即时反馈的场景。</p>
+<p><strong>K3.1 Pro在编码、3D创作和金融研究等代理能力上取得显著提升，金融场景幻觉率下降65%：</strong>该模型能够完成全项目编码，例如在Unreal、Unity、Godot等引擎中开发游戏，使用Blender和CAD进行3D建模，并且在金融工作中表现更可靠，幻觉率降低65%。这些改进使其在代理型任务中更具竞争力，尤其是需要长流程和稳定输出的应用。</p>
+<p><strong>第三方评估显示，K3.1Pro在多项基准测试中达到或接近海外领先模型：</strong>Terminal-Bench 4.0 （编码代理）得分65.7%，高于GPT-6 Astra的58.2%，内部评估得分61.2%，也高于K3的55.95%。BenchCAD （3D创建）得分92.7%，接近GPT-6 Astra的95.9%。OfficeQA Pro v2（金融）可实现端到端金融工作流交付，得分64.4，优于海外同行；内部评估表明其在真实世界任务和复杂提示下具有较高的事实准确性，金融建模、金融研究和业务运营均领先K3。</p>
+<p><strong>在ArtificialAnalysis智能指数中，K3.1 Pro排名全球第四，且单任务成本约2.11美元，优于多个海外同行：</strong>根据Artificial Analysis Intelligence Index （10月24日），Kimi K3.1 Pro被列为全球SOTA模型之一，排名全球第四。其每任务成本约2.11美元，优于Opus5.5、Sonnet5.5和Muse Wonder等海外模型。</p>
+<p><strong>相比K3及中国其他旗舰模型，K3.1Pro在参数规模和价格效率上表现出明显优势：</strong>K3.1Pro活跃参数104B，高于Qwen3.8-Max的95B、DeepSeek V3 Pro的49B和GLM-5.3的40B；总参数2.8T，与K3持平，高于Qwen3.8-Max的2.4T、 DeepSeek V3 Pro的1.6T和GLM-5.3的744B。缓存读取/输入/输出价格分别为0.2/2.0/10.0美元/百万token，较K3的0.3/3.0/15.0美元降低33%。在AA的成本每任务对比中，K3.1Pro位于帕累托前沿。混合价格方面，K3.1Pro为4.0美元/百万token，高于Qwen3.8-Max的3.0美元、DeepSeekV4 Pro的1.98美元和GLM-5.3的2.15美元，但低于Claude Opus 5.5的8.0美元和GPT-6Astra的20.0美元。</p>
+<p><strong>后续将有更多中国模型发布，出口管制修订可能影响发布节奏：</strong>近期美国模型迭代迅速，包括OpenAI的GPT-6 Astra、 GPT-6 Sol、 GPT-6 Luna等。 中国方面，继K3.1 Pro、 DeepSeek-V4.1-Flash-1017和M3.1 Flash发布后，预计GLM-5.5、Qwen4、M3 Pro、Hy4和DeepSeek-V4.1-Pro等模型也将陆续推出。10月16日发布的第48号公告涉及《禁止或限制出口技术目录》修订草案，市场正关注新模型发布时机及相关细节。此外，MiniMax宣布已完成部分近期发布及未来模型的开放源代码发布和海外许可所需注册程序。</p>
+</article></main>
+<footer><div class="footer-inner">
+<span>美股研究专题 · 研究员观点笔记</span>
+<span>仅供研究参考，不构成投资建议</span>
+</div></footer>
+</body>
+</html>
